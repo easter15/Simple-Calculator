@@ -10,18 +10,19 @@ do
     double result = 0;
     string symbol = "";
 
-    Console.WriteLine("*****************\n");
-    Console.WriteLine("Simple Calculator");
-    Console.WriteLine("\n*****************\n");
+    Console.WriteLine(" *****************\n");
+    Console.WriteLine(" Simple Calculator");
+    Console.WriteLine("\n *****************\n");
 
     Console.Write("Please enter your first number: ");
     num1 = Convert.ToDouble(Console.ReadLine());
 
-    Console.WriteLine("\nPlease enter a mathematical symbol: ");
-    Console.WriteLine("\t+ Add");
-    Console.WriteLine("\t- Subtract");
-    Console.WriteLine("\t* Multiply");
-    Console.WriteLine("\t/ Divide");
+    Console.WriteLine("\nMathematical symbols:");
+    Console.WriteLine("\t+ = Add");
+    Console.WriteLine("\t- = Subtract");
+    Console.WriteLine("\t* = Multiply");
+    Console.WriteLine("\t/ = Divide");
+    Console.Write("\nPlease enter a mathematical symbol: ");
     symbol = Console.ReadLine();
 
     Console.Write("\nPlease enter your second number: ");
@@ -50,7 +51,7 @@ do
             Console.WriteLine("That was not a valid option");
             break;
     }
-    Console.Write("Woud you like to do another calculation? (Y = Yes, N = No): ");
+    Console.Write("\nWould you like to do another calculation? (Y = Yes, N = No): ");
 
 } while (Console.ReadLine().ToUpper() == "Y");
 
